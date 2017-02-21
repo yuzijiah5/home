@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0}
+			#canvas{
+				
+				background:#eee;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="1000" height="500">
+			该升级了
+		</canvas>
+	</body>
+	<script type="text/javascript">
+		var canvas=document.getElementById("canvas");
+		var ctx=canvas.getContext("2d");
+		
+		var len=10;
+		for(var i=1;i<=len;i++){
+			ctx.strokeStyle="#8376e2";
+			ctx.arc(50+(i-1)*100,50,25,0,Math.PI*i/5,false);
+			ctx.stroke();
+			ctx.beginPath();
+		}
+		
+		
+		
+
+		
+	</script>
+</html>
